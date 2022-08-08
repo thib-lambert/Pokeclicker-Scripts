@@ -485,7 +485,7 @@ if (!localStorage.getItem('delayAutoClick')) {
 clickState = JSON.parse(localStorage.getItem('autoClickState'));
 gymState = JSON.parse(localStorage.getItem('autoGymState'));
 gymSelect = JSON.parse(localStorage.getItem('selectedGym'));
-dungeonState = JSON.parse(localStorage.getItem('autoDungeonState'));
+dungeonState = localStorage.getItem('autoDungeonState') == "ON";
 dungeonSelect = JSON.parse(localStorage.getItem('selectedDungeon'));
 delayAutoClick = JSON.parse(localStorage.getItem('delayAutoClick'));
 clickDPS = clickState ? JSON.parse(localStorage.getItem('storedClickDPS')) : 0;
